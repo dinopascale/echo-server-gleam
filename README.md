@@ -1,20 +1,24 @@
 # echo_server
 
-[![Package Version](https://img.shields.io/hexpm/v/echo_server)](https://hex.pm/packages/echo_server)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/echo_server/)
+Simple Echo server written with gleam, using mist as http server.
 
-```sh
-gleam add echo_server
-```
-```gleam
-import echo_server
+## How to
 
-pub fn main() {
-  // TODO: An example of the project in use
-}
+In a terminal start the server with
+
+```bash
+$ gleam run
 ```
 
-Further documentation can be found at <https://hexdocs.pm/echo_server>.
+then hit localhost:3000 with a POST request with plain text. Server should echoes exact same string
+
+### Customize port
+
+If you want to change default port (3000), you can setup a PORT env in your os. For example on Unix
+
+```bash
+$ PORT=8080 gleam run
+```
 
 ## Development
 
